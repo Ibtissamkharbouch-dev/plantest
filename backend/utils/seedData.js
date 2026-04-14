@@ -1,0 +1,120 @@
+export const seedData = {
+  students: [
+    {
+      id: 'S1001',
+      name: 'Alice Johnson',
+      major: 'Computer Science',
+      year: 'Sophomore',
+      maxCredits: 18,
+      completedCourses: ['MATH101', 'CS101']
+    },
+    {
+      id: 'S1002',
+      name: 'Brian Lee',
+      major: 'Information Systems',
+      year: 'Junior',
+      maxCredits: 15,
+      completedCourses: ['MATH101', 'CS101', 'CS102']
+    },
+    {
+      id: 'S1003',
+      name: 'Sofia Martinez',
+      major: 'Software Engineering',
+      year: 'Senior',
+      maxCredits: 21,
+      completedCourses: ['MATH101', 'CS101', 'CS102', 'CS201', 'ENG101']
+    }
+  ],
+  courses: [
+    {
+      id: 'CS201',
+      code: 'CS201',
+      title: 'Data Structures',
+      department: 'Computer Science',
+      instructor: 'Dr. Kapoor',
+      credits: 3,
+      term: 'Fall 2026',
+      schedule: 'Mon/Wed 10:00 AM - 11:15 AM',
+      room: 'Tech 201',
+      capacity: 30,
+      enrolledStudentIds: ['S1002'],
+      prerequisites: ['CS101'],
+      description: 'Study of arrays, linked lists, stacks, queues, trees, and hash tables.'
+    },
+    {
+      id: 'CS301',
+      code: 'CS301',
+      title: 'Database Systems',
+      department: 'Computer Science',
+      instructor: 'Prof. Adams',
+      credits: 3,
+      term: 'Fall 2026',
+      schedule: 'Tue/Thu 9:30 AM - 10:45 AM',
+      room: 'Tech 305',
+      capacity: 25,
+      enrolledStudentIds: [],
+      prerequisites: ['CS201'],
+      description: 'Relational modeling, SQL, transactions, indexing, and web data fundamentals.'
+    },
+    {
+      id: 'SE310',
+      code: 'SE310',
+      title: 'Software Architecture',
+      department: 'Software Engineering',
+      instructor: 'Dr. Chen',
+      credits: 4,
+      term: 'Fall 2026',
+      schedule: 'Mon 1:00 PM - 3:45 PM',
+      room: 'Eng 110',
+      capacity: 20,
+      enrolledStudentIds: ['S1003'],
+      prerequisites: ['CS201'],
+      description: 'Architectural patterns, quality attributes, trade-offs, and documentation.'
+    },
+    {
+      id: 'MATH220',
+      code: 'MATH220',
+      title: 'Discrete Mathematics',
+      department: 'Mathematics',
+      instructor: 'Dr. Rivera',
+      credits: 3,
+      term: 'Fall 2026',
+      schedule: 'Tue/Thu 1:00 PM - 2:15 PM',
+      room: 'Sci 102',
+      capacity: 35,
+      enrolledStudentIds: ['S1001'],
+      prerequisites: ['MATH101'],
+      description: 'Logic, sets, combinatorics, graphs, induction, and proofs.'
+    },
+    {
+      id: 'BUS150',
+      code: 'BUS150',
+      title: 'Project Management Basics',
+      department: 'Business',
+      instructor: 'Prof. Singh',
+      credits: 2,
+      term: 'Fall 2026',
+      schedule: 'Fri 9:00 AM - 10:50 AM',
+      room: 'Bus 210',
+      capacity: 40,
+      enrolledStudentIds: [],
+      prerequisites: [],
+      description: 'Core project planning, scheduling, risk tracking, and stakeholder communication.'
+    },
+    {
+      id: 'HCI210',
+      code: 'HCI210',
+      title: 'Human-Computer Interaction',
+      department: 'Design',
+      instructor: 'Dr. Evans',
+      credits: 3,
+      term: 'Fall 2026',
+      schedule: 'Wed/Fri 2:30 PM - 3:45 PM',
+      room: 'Design 12',
+      capacity: 28,
+      enrolledStudentIds: [],
+      prerequisites: ['CS101'],
+      description: 'User-centered design, usability testing, accessibility, and prototyping.'
+    }
+  ]
+};
